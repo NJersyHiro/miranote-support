@@ -3,41 +3,115 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Miranote - Support</title>
+  <title>Miranote</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      color: #333;
+      color: #e0e0e0;
+      background: #0d0d0d;
       min-height: 100vh;
       display: flex;
       flex-direction: column;
     }
+
+    /* Header */
     header {
       padding: 2rem;
       text-align: center;
-      border-bottom: 1px solid #eee;
+      border-bottom: 1px solid #222;
     }
-    header h1 { font-size: 1.5rem; font-weight: 600; }
-    main {
-      flex: 1;
+    header h1 { font-size: 1.5rem; font-weight: 600; color: #fff; }
+
+    /* Sections */
+    section {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem;
+      width: 100%;
+    }
+    section + section { border-top: 1px solid #1a1a1a; }
+    section h2 {
+      font-size: 1.25rem;
+      color: #fff;
+      margin-bottom: 1.25rem;
+      text-align: center;
+    }
+
+    /* Games */
+    .game-card {
+      background: #161616;
+      border: 1px solid #252525;
+      border-radius: 12px;
+      padding: 1.5rem;
       display: flex;
-      flex-direction: column;
+      gap: 1.25rem;
+      align-items: center;
+    }
+    .game-icon {
+      width: 72px;
+      height: 72px;
+      background: linear-gradient(135deg, #4a90d9, #7b5ea7);
+      border-radius: 16px;
+      flex-shrink: 0;
+      display: flex;
       align-items: center;
       justify-content: center;
-      padding: 3rem 1.5rem;
-      text-align: center;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #fff;
     }
-    main h2 { font-size: 1.25rem; margin-bottom: 1rem; }
-    main p { margin-bottom: 0.5rem; color: #666; }
-    main a { color: #007aff; text-decoration: none; }
-    main a:hover { text-decoration: underline; }
-    footer {
-      padding: 1.5rem;
+    .game-info h3 {
+      font-size: 1rem;
+      color: #fff;
+      margin-bottom: 0.35rem;
+    }
+    .game-info p {
+      font-size: 0.9rem;
+      color: #999;
+      line-height: 1.5;
+    }
+    .game-tag {
+      display: inline-block;
+      margin-top: 0.5rem;
+      font-size: 0.75rem;
+      color: #7b5ea7;
+      border: 1px solid #7b5ea7;
+      border-radius: 4px;
+      padding: 0.15rem 0.5rem;
+    }
+
+    /* About */
+    .about-text {
       text-align: center;
       color: #999;
-      font-size: 0.85rem;
-      border-top: 1px solid #eee;
+      line-height: 1.8;
+      font-size: 0.95rem;
+    }
+
+    /* Support */
+    .support-content {
+      text-align: center;
+    }
+    .support-content p {
+      color: #999;
+      margin-bottom: 0.75rem;
+    }
+    .support-content a {
+      color: #4a90d9;
+      text-decoration: none;
+      font-size: 1.05rem;
+    }
+    .support-content a:hover { text-decoration: underline; }
+
+    /* Footer */
+    footer {
+      margin-top: auto;
+      padding: 1.5rem;
+      text-align: center;
+      color: #555;
+      font-size: 0.8rem;
+      border-top: 1px solid #1a1a1a;
     }
   </style>
 </head>
@@ -45,11 +119,37 @@
   <header>
     <h1>Miranote</h1>
   </header>
-  <main>
+
+  <section>
+    <h2>Games</h2>
+    <div class="game-card">
+      <div class="game-icon">NF</div>
+      <div class="game-info">
+        <h3>Equatile</h3>
+        <p>数字と演算子を組み合わせて、ターゲットの数を作り出す数式パズルゲーム。全165以上のステージに挑戦しよう。</p>
+        <span class="game-tag">パズル</span>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>About</h2>
+    <p class="about-text">
+      Miranoteは、ゲームが大好きな仲間たちが集まった開発チームです。<br>
+      私たちが大切にしていることはひとつ — プレイヤーに楽しんでもらうこと。<br>
+      ものづくりが好きで、遊び心を忘れない開発者たちが、<br>
+      ひとつひとつのゲームに想いを込めてお届けします。
+    </p>
+  </section>
+
+  <section>
     <h2>Support</h2>
-    <p>お問い合わせは下記メールアドレスまでご連絡ください。</p>
-    <p><a href="mailto:th1khse@gmail.com">th1khse@gmail.com</a></p>
-  </main>
+    <div class="support-content">
+      <p>ご質問・ご要望・不具合のご報告はこちらまで</p>
+      <a href="mailto:th1khse@gmail.com">th1khse@gmail.com</a>
+    </div>
+  </section>
+
   <footer>
     <p>&copy; 2026 Miranote</p>
   </footer>
