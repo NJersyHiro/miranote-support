@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ほどほど（Hodohodo） - プライバシーポリシー</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Hiragino Sans", "Noto Sans JP", sans-serif;
+      color: #e0e0e0; background: #0d0d0d; min-height: 100vh;
+      display: flex; flex-direction: column;
+    }
+    header { padding: 2rem; text-align: center; border-bottom: 1px solid #222; }
+    header h1 { font-size: 1.5rem; font-weight: 600; color: #fff; }
+    main { flex: 1; max-width: 640px; margin: 0 auto; padding: 2.5rem 1.5rem; width: 100%; }
+    h2 { font-size: 1.3rem; color: #fff; margin-bottom: 1.5rem; text-align: center; }
+    h3 { font-size: 1rem; color: #ccc; margin: 1.5rem 0 0.75rem; }
+    p, li { font-size: 0.9rem; color: #999; line-height: 1.7; margin-bottom: 0.5rem; }
+    ul { padding-left: 1.25rem; margin-bottom: 0.75rem; }
+    a { color: #4a90d9; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    strong { color: #ddd; }
+    .updated { text-align: center; color: #555; font-size: 0.8rem; margin-bottom: 2rem; }
+    footer { margin-top: auto; padding: 1.5rem; text-align: center; color: #555; font-size: 0.8rem; border-top: 1px solid #1a1a1a; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ほどほど（Hodohodo）</h1>
+  </header>
+  <main>
+    <h2>プライバシーポリシー</h2>
+    <p class="updated">最終更新: 2026年6月15日</p>
+
+    <p>本ポリシーは、「ほどほど」（Hodohodo。以下「本アプリ」）における利用者情報の取り扱いについて定めるものです。本アプリは、飲酒習慣の記録・目標設定・進捗の可視化・行動のヒント提供を通じて、利用者の健康増進とセルフケアを支援する記録・行動支援ツールです。</p>
+    <p><strong>本アプリは医療機器ではなく、診断・治療・予防その他の医療行為を行うものではありません。</strong>表示される数値（節約金額・回避カロリーの目安等）は参考情報です。</p>
+
+    <h3>1. 基本方針</h3>
+    <p>本アプリは利用者のプライバシーを尊重し、<strong>飲酒に関する記録を機微な情報として扱い、原則として利用者の端末内に保存します</strong>。基本機能（記録・目標・進捗）の利用にあたりアカウント登録は不要で、匿名で利用を開始できます。氏名・住所・電話番号・メールアドレス等の連絡先情報は、コア機能の利用にあたって取得しません。</p>
+
+    <h3>2. 端末内にのみ保存される情報</h3>
+    <p>以下は<strong>利用者の端末内にのみ保存</strong>され、当社サーバーへ送信・蓄積されません（クラウド同期は本バージョンでは提供しません）。</p>
+    <ul>
+      <li>飲酒ログ（酒種・量・度数・日時・メモ・「飲みたくなった」フラグ）</li>
+      <li>週間目標ドリンク数・休肝日設定・達成記録</li>
+      <li>プロフィール／設定（動機、飲酒習慣の自己申告、通知設定、単価設定）</li>
+      <li>安全分岐の状態（妊娠・妊活の申告に基づく状態）</li>
+    </ul>
+
+    <h3>3. AIコーチと第三者（AI事業者）への送信（任意・オプトイン）</h3>
+    <p>本アプリのAIコーチ機能は、外部のAI事業者 <strong>Google LLC（Gemini Developer API）</strong>を利用します。AIコーチを利用する場合に限り、応答生成のため一部のデータが当社のサーバー（プロキシ）を経由して Google へ送信されます。</p>
+    <ul>
+      <li><strong>明示的なオプトイン同意を得た場合のみ動作します。</strong>同意しない限り、いかなるデータも送信されません。同意はいつでも設定画面から撤回できます。</li>
+      <li>送信する情報（最小化）: 週間ドリンク数・目標・遵守傾向・直近の気分傾向などの<strong>要約</strong>、および利用者がコーチ向けに入力したメッセージ。</li>
+      <li>送信しない情報: 氏名・連絡先・端末識別子などの識別子、飲酒ログの生データ全件、位置情報。</li>
+    </ul>
+    <p>Google 側での取扱いは同社のポリシー（<a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>）に従います。当社は、入力データがモデル学習に利用されない条件での有料利用を前提とします。</p>
+
+    <h3>4. 当社サーバー（プロキシ）での保持方針</h3>
+    <ul>
+      <li><strong>プロンプト・AI応答は原則として保存しません（保持0日）。</strong></li>
+      <li>障害調査の目的に限り、<strong>匿名化したエラーログを最大7日間</strong>保持し、その後自動的に削除します。</li>
+      <li>APIキーはサーバー側でのみ保持し、アプリには埋め込みません。濫用防止のため、デバイス単位の認証（App Attest 等）・レート制限・入力長制限を行います。これらは利用者個人の識別を目的としません。</li>
+    </ul>
+
+    <h3>5. 課金・サブスクリプション情報</h3>
+    <p>サブスクリプション（年¥14,800 ／ 月¥1,600・無料トライアル付き）の購入・更新・復元は、Apple の <strong>App Store / StoreKit</strong> を通じて処理されます。当社はクレジットカード番号等の決済情報を直接取得・保持しません。これらは購入の判定・復元というアプリの機能のために用いられ、広告目的のトラッキングには使用しません。</p>
+    <ul>
+      <li>Apple: <a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a></li>
+    </ul>
+
+    <h3>6. 解析・トラッキングについて</h3>
+    <p>本バージョンでは、第三者解析SDK等による利用統計の収集を<strong>行っていません</strong>。本アプリは、第三者の広告SDK、行動トラッキング（広告目的）、位置情報の取得、連絡先へのアクセスを行いません。</p>
+
+    <h3>7. 危機応答・安全への配慮</h3>
+    <p>本アプリは、依存症の疑い・離脱症状・服薬中の飲酒・妊娠／妊活・希死念慮などのシグナルを検知した場合に、減酒の助長を行わず、<strong>公的な相談窓口・専門機関への導線</strong>を案内します（アプリ内「コーチ＞相談窓口」に常設）。妊娠中・妊活中の利用者は減酒の対象とせず、飲酒回避と医療相談をご案内します。</p>
+
+    <h3>8. データの削除・利用者の権利</h3>
+    <p>飲酒ログ等は端末内保存が基本のため、<strong>本アプリをアンインストールすることで端末内の当該データは消去されます</strong>。AIコーチ利用時に当社プロキシを経由した情報は原則非保持（第4章）ですが、削除・開示・利用停止等のご請求は下記窓口で受け付けます。</p>
+
+    <h3>9. 医療免責</h3>
+    <p>本アプリは健康増進・記録のためのツールであり、医療機器ではありません。本アプリおよびAIコーチは、診断・治療・服薬量の指示・断酒可否の判断などの医療行為を行いません。健康上の不安がある場合は、専門機関・相談窓口・医師にご相談ください。</p>
+
+    <h3>10. お問い合わせ</h3>
+    <ul>
+      <li>連絡先: <a href="mailto:th1khse@gmail.com">th1khse@gmail.com</a></li>
+    </ul>
+
+    <h3>11. 改定</h3>
+    <p>本ポリシーは、法令やサービス内容の変更に応じて改定されることがあります。重要な変更がある場合はアプリ内またはストア掲載情報にてお知らせします。</p>
+  </main>
+  <footer>
+    <p><a href="/hodohodo-support.html" style="color:#555;text-decoration:none;">サポート</a></p>
+    <p>&copy; 2026 ほどほど（Hodohodo）</p>
+  </footer>
+</body>
+</html>
