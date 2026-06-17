@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GlowScore - サポート</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Hiragino Sans", "Noto Sans JP", sans-serif;
+      color: #1c1c1e; background: #fbfbfd; min-height: 100vh;
+      display: flex; flex-direction: column;
+    }
+    header { padding: 2rem; text-align: center; border-bottom: 1px solid #eaedf3; }
+    header h1 { font-size: 1.5rem; font-weight: 600; color: #1c1c1e; }
+    main { flex: 1; max-width: 640px; margin: 0 auto; padding: 2.5rem 1.5rem; width: 100%; }
+    h2 { font-size: 1.3rem; color: #1c1c1e; margin-bottom: 1.5rem; text-align: center; }
+    h3 { font-size: 1rem; color: #3e6cf0; margin: 1.75rem 0 0.6rem; }
+    p { font-size: 0.9rem; color: #6b7280; line-height: 1.7; margin-bottom: 0.5rem; }
+    a { color: #3e6cf0; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .card { background: #fff; border: 1px solid #eaedf3; border-radius: 12px; padding: 1.25rem 1.4rem; margin: 1rem 0; box-shadow: 0 1px 8px rgba(0,0,0,0.04); }
+    .contact { text-align: center; font-size: 1.05rem; }
+    footer { margin-top: auto; padding: 1.5rem; text-align: center; color: #9aa0aa; font-size: 0.8rem; border-top: 1px solid #eaedf3; }
+    strong { color: #1c1c1e; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>GlowScore</h1>
+  </header>
+  <main>
+    <h2>サポート</h2>
+    <p>自撮りからAIが特徴を分析し、自己改善の参考スコアやヒントを提示するアプリ「GlowScore」のサポートページです。スコアは観察できる特徴の状態を示す参考値であり、医療・診断・客観的な評価ではありません。</p>
+
+    <div class="card">
+      <h3>お問い合わせ</h3>
+      <p>ご質問・ご要望・不具合のご報告は下記までご連絡ください。</p>
+      <p class="contact"><a href="mailto:th1khse@gmail.com">th1khse@gmail.com</a></p>
+    </div>
+
+    <div class="card">
+      <h3>よくある質問</h3>
+      <p><strong>スコアの根拠は？</strong><br>
+      正面・横顔の写真からAIが、肌の明るさ・輪郭のはっきりさ・左右のバランスなど「観察できる特徴の状態」を0〜100の参考値として推定します。優劣のランキングではありません。結果画面に推定の根拠を日本語で表示します。</p>
+      <p><strong>写真はどう扱われますか？</strong><br>
+      顔写真は解析のためだけにサーバーへ一時送信され、結果の作成後に削除されます。サーバーには派生したスコアのみを保存し、顔画像は保持しません。詳しくは<a href="./glowscore-privacy.html">プライバシーポリシー</a>をご覧ください。</p>
+      <p><strong>AIコーチとは？</strong><br>
+      肌ケア・身だしなみ・生活習慣など、自己改善の具体的な相談にAIが日本語で答えるチャットです。一般的な情報の提供であり、医療・診断ではありません。</p>
+      <p><strong>カラー診断とは？</strong><br>
+      写真から、似合いやすい色の傾向（パーソナルカラーの目安）とおすすめの色をAIが提案します。</p>
+      <p><strong>サブスクリプションを解約するには？</strong><br>
+      端末の「設定」＞Apple ID＞サブスクリプション、またはアプリ内「設定」＞「サブスクリプションを管理」からいつでも解約できます。</p>
+      <p><strong>データを削除したい</strong><br>
+      アプリ内「設定」→「アカウントを削除」から、サーバー上のスコア・コーチ履歴・同期した進捗写真を含めて削除できます。</p>
+    </div>
+
+    <div class="card">
+      <h3>規約・ポリシー</h3>
+      <p><a href="./glowscore-privacy.html">プライバシーポリシー</a></p>
+      <p><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">利用規約（Apple 標準使用許諾契約・EULA）</a></p>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2026 GlowScore</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GlowScore - プライバシーポリシー</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Hiragino Sans", "Noto Sans JP", sans-serif;
+      color: #1c1c1e; background: #fbfbfd; min-height: 100vh; display: flex; flex-direction: column;
+    }
+    header { padding: 2rem; text-align: center; border-bottom: 1px solid #eaedf3; }
+    header h1 { font-size: 1.5rem; font-weight: 600; color: #1c1c1e; }
+    main { flex: 1; max-width: 680px; margin: 0 auto; padding: 2.5rem 1.5rem; width: 100%; }
+    h2 { font-size: 1.3rem; color: #1c1c1e; margin-bottom: 1.5rem; text-align: center; }
+    h3 { font-size: 1rem; color: #3e6cf0; margin: 1.75rem 0 0.6rem; }
+    p, li { font-size: 0.9rem; color: #6b7280; line-height: 1.75; margin-bottom: 0.5rem; }
+    ul { padding-left: 1.2rem; }
+    a { color: #3e6cf0; text-decoration: none; }
+    strong { color: #1c1c1e; }
+    footer { margin-top: auto; padding: 1.5rem; text-align: center; color: #9aa0aa; font-size: 0.8rem; border-top: 1px solid #eaedf3; }
+  </style>
+</head>
+<body>
+  <header><h1>GlowScore</h1></header>
+  <main>
+    <h2>プライバシーポリシー</h2>
+    <p>最終更新日: 2026年6月17日</p>
+    <p>GlowScore（以下「本アプリ」）は、利用者のプライバシーを最優先に設計しています。本ポリシーは、本アプリが扱う情報とその取り扱いを説明します。本アプリは18歳以上の方を対象としています。</p>
+
+    <h3>1. 顔写真の取り扱い（重要）</h3>
+    <p>顔写真（正面・横顔）は、AIによる解析を実行するためだけに、暗号化された通信（TLS）で当社のサーバーへ<strong>一時的に</strong>送信されます。</p>
+    <ul>
+      <li>解析の結果（スコア等）を生成した後、<strong>送信された顔写真の原本は速やかに削除</strong>します。失敗・タイムアウト時も最大24時間以内に自動削除します。</li>
+      <li>サーバーには<strong>派生したスコア等の数値情報のみ</strong>を保存し、<strong>顔画像そのものは保持しません</strong>。バックアップやログにも顔画像を残しません。</li>
+      <li>解析には第三者のAI基盤（Google の Gemini API）を利用します。送信は解析の目的に限定し、広告利用やデータマイニングには使用しません。</li>
+    </ul>
+
+    <h3>2. 端末内に保存される情報</h3>
+    <p>進捗写真（利用者が明示的に保存した定点観測写真）は、原則として<strong>端末内のみ</strong>に保存されます。同期は任意（オプトイン）です。</p>
+
+    <h3>3. アカウント（任意）</h3>
+    <p>本アプリはアカウント登録なし（ゲスト）でご利用いただけます。データの同期・履歴の保存・複数端末利用・削除のためにアカウントを作成する場合のみ、サインインの識別子を扱います。購入にアカウントは必要ありません。</p>
+
+    <h3>4. AIコーチ</h3>
+    <p>AIコーチのメッセージは、応答生成のために当社サーバー経由でAI基盤（LLM）へ送信されます。送信内容は最小限に保ち、自己否定や危機の兆候が見られる場合は、評価を控えて外部の相談窓口をご案内します。</p>
+
+    <h3>5. 課金情報</h3>
+    <p>サブスクリプション・アプリ内課金の処理は Apple（App Store / StoreKit）が行います。当社はカード番号等の決済情報を受け取りません。</p>
+
+    <h3>6. 利用状況・診断</h3>
+    <p>不具合の改善のため、匿名の利用状況・クラッシュ情報を扱う場合があります。これらに顔画像やコーチの会話本文は含めません。</p>
+
+    <h3>7. 第三者提供</h3>
+    <p>法令に基づく場合を除き、利用者情報を第三者に販売・提供しません。解析・応答生成のためのAI基盤への送信（上記1・4）を除きます。</p>
+
+    <h3>8. データの削除・お問い合わせ</h3>
+    <p>アプリ内「設定」→「アカウントを削除」から、サーバー上のスコア・コーチ履歴・同期した進捗写真を含めて削除できます。お問い合わせは <a href="mailto:th1khse@gmail.com">th1khse@gmail.com</a> まで。</p>
+
+    <h3>9. 改定</h3>
+    <p>本ポリシーは必要に応じて改定されます。重要な変更がある場合はアプリ内またはサポートページでお知らせします。</p>
+  </main>
+  <footer><p>&copy; 2026 GlowScore</p></footer>
+</body>
+</html>
